@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI
 
 
-# Title
+#Title
 st.title("My Lab 3 Question Answering Chatbot")
 
 
@@ -68,7 +68,7 @@ if prompt := st.chat_input("What is up?"):
   #start with an empty buffer
     recent_messages = []
 
-    # Count how many user messages are in the buffer
+    #User messages in the buffer
     user_message_count = 0
 
 

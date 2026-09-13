@@ -36,7 +36,13 @@ hw2 = st.Page(
     "HW Manager/HW2.py",
     title="HW2",
     icon = "✏️",
-    default=True
+)
+
+hw3 = st.Page(
+    "HW Manager/HW3.py",
+    title= "HW3",
+    icon="✏️",
+    default= True
 )
 
 pg = st.navigation([
@@ -44,7 +50,8 @@ pg = st.navigation([
     lab_two,
     lab_three,
     hw1,
-    hw2
+    hw2,
+    hw3
 ])
 
 pg.run()
