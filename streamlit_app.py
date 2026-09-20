@@ -5,27 +5,6 @@ st.set_page_config(
     page_icon=":material/edit:"
 )
 
-lab_one = st.Page(
-    "Lab1.py",
-    title="Lab 1",
-    icon="🛜"
-)
-
-lab_two = st.Page(
-    "Lab2.py",
-    title="Lab 2",
-    icon="🛜"
-
-)
-
-lab_three = st.Page(
-    "Lab3.py",
-    title="Lab 3",
-    icon="🛜"
-
-)
-
-
 hw1 = st.Page(
     "HW Manager/HW1.py",
     title="HW1",
@@ -42,16 +21,21 @@ hw3 = st.Page(
     "HW Manager/HW3.py",
     title= "HW3",
     icon="✏️",
+
+)
+
+hw4 = st.Page(
+    "HW Manager/HW4.py",
+    title= "HW4",
+    icon = "✏️",
     default= True
 )
 
 pg = st.navigation([
-    lab_one,
-    lab_two,
-    lab_three,
     hw1,
     hw2,
-    hw3
+    hw3,
+    hw4
 ])
 
 pg.run()
