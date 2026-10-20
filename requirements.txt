@@ -6,3 +6,5 @@ beautifulsoup4
 google-generativeai
 pysqlite3-binary
 chromadb
+scikit-learn
+pandas
