@@ -144,7 +144,7 @@ selected_model = st.sidebar.selectbox(
 )
 
 st.sidebar.caption(
-    "Compare both models using the same question and filters."
+    
 )
 
 st.sidebar.write(
@@ -153,9 +153,6 @@ st.sidebar.write(
 )
 
 
-# --------------------------------------------------
-# STEP 4: LET THE USER CHOOSE A SCOPE AND TASK
-# --------------------------------------------------
 
 companies = sorted(
     news_df["company_name"].unique()
@@ -196,9 +193,6 @@ st.caption(
 )
 
 
-# --------------------------------------------------
-# STEP 5: DEFINE RETRIEVAL TERMS AND MODEL INSTRUCTIONS
-# --------------------------------------------------
 
 # A general ranking needs a way to shortlist articles.
 # These words help retrieve stories relevant to a law firm.
@@ -259,9 +253,6 @@ supported by article IDs.
 """
 
 
-# --------------------------------------------------
-# STEP 6: RETRIEVE ARTICLES AND GENERATE AN ANSWER
-# --------------------------------------------------
 
 #prevents a paid API request from running
 if st.button(
